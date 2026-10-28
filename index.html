@@ -447,6 +447,14 @@
   }
   @keyframes expand-in { to { transform: scaleX(1); } }
 
+  @media (max-height: 760px) and (min-width: 421px) {
+    body { align-items: flex-start; }
+    .scene { min-height: 100svh; padding-top: 28px; justify-content: flex-start; }
+    .art-wrap { width: clamp(112px, 20vw, 165px); }
+    .container { padding-top: 12px; padding-bottom: 18px; }
+    .quote-next { margin-top: 16px; }
+  }
+
   @media (max-width: 420px) {
     .container { padding: 16px 18px 26px; }
     .theme-toggle { width: 36px; height: 36px; }
