@@ -376,6 +376,13 @@
   .quote-next:focus-visible, .theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
   .quote-content { transition: opacity 320ms cubic-bezier(.22,.61,.36,1), transform 320ms cubic-bezier(.22,.61,.36,1); }
   .quote-content.changing { opacity: 0; transform: translateY(7px); }
+  .future-promise {
+    margin: 32px 0 0;
+    color: var(--ink-soft);
+    font: 10px "Space Mono", monospace;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+  }
 
   /* --- orchestrated load sequence --- */
   @media (prefers-reduced-motion: no-preference) {
@@ -515,6 +522,7 @@
     <p id="quote-kr" class="quote-content"></p>
     <p id="author" class="quote-content"></p>
     <button class="quote-next" id="quoteNext" type="button">Another reflection <span aria-hidden="true">↗</span></button>
+    <p class="future-promise">A Pledge to the Future</p>
   </div>
 
 </div>
